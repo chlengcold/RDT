@@ -7,4 +7,5 @@ If you use this software in your work, you shall add this work to your reference
 
 If you are first there, see [demo.R](https://github.com/chlengcold/RDT/blob/main/Demo.R), please.  
 
-Note: this is not the submitted version of the article. If you prefer the original version, please contact the correspondent Dr. [Grace Yao](kaiping@ntu.edu.tw).   
+Note 1: this is not the submitted version of the article. If you prefer the original version, please contact the correspondent Dr. [Grace Yao](kaiping@ntu.edu.tw).   
+Note 2: Currently, [RDT.R](https://github.com/chlengcold/RDT/edit/main/RDT_ver20230726.R) is a version for analyzing the positive latent traits not for negative latent traits.

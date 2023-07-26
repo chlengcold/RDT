@@ -5,4 +5,6 @@ Referred to Leng, CH., Huang, HY. & Yao, G. A Social Desirability Item Response 
 All copyright / intellectual property rights of the Software belong to the Licensor, and they are protected by Intellectual.  
 If you use this software in your work, you shall add this work to your reference list.  
 
-Note: this is not the submitted version of the article. If you prefer the original version, please contact the correspondent Dr. [Grace Yao](kaiping@ntu.edu.tw). 
+If you are first there, see [demo.R](https://github.com/chlengcold/RDT/blob/main/Demo.R), please.  
+
+Note: this is not the submitted version of the article. If you prefer the original version, please contact the correspondent Dr. [Grace Yao](kaiping@ntu.edu.tw).   

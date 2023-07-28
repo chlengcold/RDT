@@ -1,3 +1,4 @@
+# version 2023_07_26
 RDT = function(y, J, pois = rep(10,5), t_pois = rep(1:5,each=10), nchain=2, iters=15000, burnin=5000, thin=3){
   
   cat("In preparation.\n")

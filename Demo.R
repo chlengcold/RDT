@@ -26,7 +26,8 @@ T1 = Sys.time()
 mod = RDT(y,J=5,pois=pois,t_pois=t_pois,nchain=3,iters=21000,burnin=7000,thin=14)
 Sys.time() - T1
 
-#Re-train
+# ReTrain: update the earlier model if its parameters did not converge; default is F
+# if ReTrain is T, ``mod'' must be the result of the earlier model
 T2 = Sys.time()
 mod = RDT(y,J=5,pois=pois,t_pois=t_pois,nchain=3,iters=15000,burnin=5000,thin=10,ReTrain=T,mod=mod)
 Sys.time() - T2

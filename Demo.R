@@ -8,13 +8,13 @@ library(ranger)
 library(tidyverse)
 library(BNSP)
 
-# The data shall be scaled as 0 -- J-1 in a J-point item.
+# The data shall be scaled as 0 -- J-1 if it is a J-point scale
 y = read.csv('Data_BFI.csv') %>% filter(Condition==3) %>% select(!all_of('Condition'))
 # number of items in each dimension
-## the example is five dimensions containing 10 items, respectively
+## The example is five dimensions containing 10 items, respectively
 pois = rep(10,5)
 # the corresponding dimension for each item
-## the example is items 1-9 are in dimension 1; items 10-19 are in dimension 2; items 21-29 are in dimension 3; items 31-39 are in dimension 4; items 41-49 are in dimension 5.
+## The example is items 1-9 are in dimension 1; items 10-19 are in dimension 2; items 21-29 are in dimension 3; items 31-39 are in dimension 4; items 41-49 are in dimension 5.
 t_pois = rep(1:5,each=10)
 
 # J: J-point scale
@@ -27,7 +27,7 @@ mod = RDT(y,J=5,pois=pois,t_pois=t_pois,nchain=3,iters=21000,burnin=7000,thin=14
 Sys.time() - T1
 
 # ReTrain: update the earlier model if its parameters did not converge; default is F
-# if ReTrain is T, ``mod'' must be the result of the earlier model
+# If ReTrain is T, ``mod'' must be the result of the earlier model
 T2 = Sys.time()
 mod = RDT(y,J=5,pois=pois,t_pois=t_pois,nchain=3,iters=15000,burnin=5000,thin=10,ReTrain=T,mod=mod)
 Sys.time() - T2
